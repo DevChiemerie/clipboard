@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: hsl(171 66% 44%);
+  --color-primary-shadow: hsl(171 66% 34%);
+
+  --color-secondary: hsl(233 100% 69%);
+  --color-secondary-shadow: hsl(233 100% 63%);
+
+  --color-heading: hsl(210 10% 33%);
+
+  --color-paragraph: hsl(201 11% 66%);
+
+  --color-body: hsl(209 26% 98%);
+
+  --color-footer: hsl(20 30% 97%);
+}
