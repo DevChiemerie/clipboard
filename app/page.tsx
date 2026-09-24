@@ -41,7 +41,7 @@ export default function Page() {
         <Logo />
       </div>
       <Header type="h1">A historty of everything you copy</Header>
-      <Paragarph marginTop="p1">
+      <Paragarph marginTop="p1" styles="wrap">
         Clipboard allows you to track and organze everything you copy. Instantly
         access your clipboard on all your device.
       </Paragarph>
@@ -67,7 +67,7 @@ export default function Page() {
           <Header>Keep track of your snippets</Header>
         </div>
         <div className="mb-10">
-          <Paragarph>
+          <Paragarph styles="wrap">
             Clipboard instanly stores any item you copy in the cloud, meaning
             you can access your snippets immediately on all your devices. Our
             Mac and iOS apps will help you organize everything.
@@ -115,7 +115,7 @@ export default function Page() {
       <div className="mb-32 lg:mb-20">
         <div className="mb-12">
           <Header>Access Clipboard Anywhere</Header>
-          <Paragarph>
+          <Paragarph styles="wrap">
             Whether you&apos;re on the go, or at your computer, you can access
             all your Clipoard snippets in a few simple clicks
           </Paragarph>
@@ -252,7 +252,7 @@ export default function Page() {
 
       <Header>Clipboard for iOS and Mac OS</Header>
       <div className="mt-5 mb-10">
-        <Paragarph>
+        <Paragarph styles="wrap">
           Available for free on the App Store. Download for Mac or iOS, sync
           with iCloud and you&apos;re ready to start adding to your clipboard.
         </Paragarph>
