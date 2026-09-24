@@ -14,7 +14,7 @@ export default function Page() {
           src={bg}
           alt="The Background Image"
           fill
-          quality={80}
+          quality={75}
           placeholder="blur"
         />
       </div>
@@ -28,14 +28,14 @@ export default function Page() {
       </Paragarph>
 
       {/*The first two buttons */}
-      <div className="mb-32">
+      <div className="mb-32 md:mt-7 md:flex md:gap-20 md:justify-self-center">
         <div className="mt-5 justify-self-center">
           <Button shadowColor="var(--color-primary-shadow)" type="primary">
             Download for iOS
           </Button>
         </div>
 
-        <div className="mt-7 justify-self-center">
+        <div className="mt-5 justify-self-center">
           <Button shadowColor="var(--color-secondary-shadow)" type="secondary">
             Download for Mac
           </Button>
@@ -57,10 +57,10 @@ export default function Page() {
       </div>
 
       {/*The Desktop Image and text section(text with header and paragraph)  */}
-      <div className="mb-32">
-        <div className="mb-10 flex justify-self-center">
+      <div className="mb-32 gap-1 lg:mt-30 lg:flex">
+        <div className="mb-10 w-full min-w-0 justify-center">
           <Image
-            className="object-cover"
+            className="mx-10 h-auto w-full max-w-150 object-contain lg:-ml-7 lg:max-w-none"
             src="/computer.png"
             alt="A Mac Desktop Computer"
             width="230"
@@ -93,7 +93,7 @@ export default function Page() {
       </div>
 
       {/*The Section with that text and Tablet & Phone pics */}
-      <div className="mb-32">
+      <div className="mb-32 lg:mb-20">
         <div className="mb-12">
           <Header>Access Clipboard Anywhere</Header>
           <Paragarph>
@@ -102,9 +102,9 @@ export default function Page() {
           </Paragarph>
         </div>
 
-        <div className="mb-10 flex justify-self-center">
+        <div className="mb-10 flex w-full min-w-0 justify-center">
           <Image
-            className="object-cover"
+            className="h-auto w-full max-w-175 object-contain lg:w-3/4"
             src="/devices.png"
             alt="Tablet and Mobile phone"
             width="230"
@@ -122,7 +122,7 @@ export default function Page() {
       </div>
 
       {/* This is the section with image, heading and text under them Create Blacklist */}
-      <div className="mb-28">
+      <div className="mb-28 lg:flex">
         <div className="mt-20">
           <div className="mb-5 flex justify-self-center">
             <Image
@@ -177,10 +177,10 @@ export default function Page() {
       </div>
 
       {/*The partners Logo (Google, IBM etc..)*/}
-      <div className="mb-32">
-        <div className="mb-15 flex justify-self-center">
+      <div className="mb-32 md:mx-7 md:mb-20 md:flex md:justify-between lg:flex lg:items-center lg:justify-between">
+        <div className="mb-15 flex justify-center lg:mb-0 lg:flex-1">
           <Image
-            className="object-cover"
+            className="h-auto w-auto object-contain"
             src="/google.png"
             alt="Google Logo"
             width="150"
@@ -188,9 +188,9 @@ export default function Page() {
           />
         </div>
 
-        <div className="mb-15 flex justify-self-center">
+        <div className="mb-15 flex justify-center lg:mb-0 lg:flex-1">
           <Image
-            className="object-cover"
+            className="h-auto w-auto object-contain"
             src="/ibm.png"
             alt="IBM Logo"
             width="150"
@@ -198,9 +198,9 @@ export default function Page() {
           />
         </div>
 
-        <div className="mb-15 flex justify-self-center">
+        <div className="mb-15 flex justify-center lg:mb-0 lg:flex-1">
           <Image
-            className="object-cover"
+            className="h-auto w-auto object-contain"
             src="/microsoft.png"
             alt="Microsoft Logo"
             width="150"
@@ -208,9 +208,9 @@ export default function Page() {
           />
         </div>
 
-        <div className="mb-15 flex justify-self-center">
+        <div className="mb-15 flex justify-center lg:mb-0 lg:flex-1">
           <Image
-            className="object-cover"
+            className="h-auto w-auto object-contain"
             src="/hp.png"
             alt="HP Logo"
             width="150"
@@ -218,9 +218,9 @@ export default function Page() {
           />
         </div>
 
-        <div className="mb-15 flex justify-self-center">
+        <div className="mb-15 flex justify-center lg:mb-0 lg:flex-1">
           <Image
-            className="object-cover"
+            className="h-auto w-auto object-contain"
             src="/vector-graphics.png"
             alt="Vector Graphic Logo"
             width="150"
@@ -239,7 +239,7 @@ export default function Page() {
         </Paragarph>
       </div>
 
-      <div className="mb-32">
+      <div className="mb-32 md:mt-7 md:flex md:gap-20 md:justify-self-center">
         <div className="mt-5 justify-self-center">
           <Button shadowColor="var(--color-primary-shadow)" type="primary">
             Download for iOS
@@ -257,56 +257,58 @@ export default function Page() {
 
       <div className="bg-footer">
         <footer>
-          <div className="mb-10 flex justify-self-center pt-10">
-            <Image
-              className="object-cover"
-              src="/logo.svg"
-              alt="Clipboard Logo"
-              width="50"
-              height="50"
-            />
-          </div>
-
-          <div>
-            <ParagarphFooter>FAQs</ParagarphFooter>
-            <ParagarphFooter>Contact Us</ParagarphFooter>
-          </div>
-
-          <div>
-            <ParagarphFooter>Privacy Policy</ParagarphFooter>
-            <ParagarphFooter>Press Kit</ParagarphFooter>
-          </div>
-
-          <ParagarphFooter>Install Guide</ParagarphFooter>
-
-          <div className="mt-10 flex justify-between gap-10 justify-self-center pb-10">
-            <div>
+          <div className="lg:mx-7 lg:flex lg:justify-between">
+            <div className="mb-10 flex justify-self-center pt-10">
               <Image
                 className="object-cover"
-                src="/facebook.svg"
-                alt="Facebook Logo"
-                width="20"
-                height="20"
+                src="/logo.svg"
+                alt="Clipboard Logo"
+                width="50"
+                height="50"
               />
             </div>
 
-            <div>
-              <Image
-                className="object-cover"
-                src="/twitter.svg"
-                alt="Twitter Logo"
-                width="20"
-                height="20"
-              />
+            <div className="lg:flex lg:flex-col lg:items-baseline">
+              <ParagarphFooter>FAQs</ParagarphFooter>
+              <ParagarphFooter>Contact Us</ParagarphFooter>
             </div>
-            <div>
-              <Image
-                className="object-cover"
-                src="/instagram.svg"
-                alt="Instagram Logo"
-                width="20"
-                height="20"
-              />
+
+            <div className="lg:flex lg:flex-col lg:items-baseline">
+              <ParagarphFooter>Privacy Policy</ParagarphFooter>
+              <ParagarphFooter>Press Kit</ParagarphFooter>
+            </div>
+
+            <ParagarphFooter>Install Guide</ParagarphFooter>
+
+            <div className="mt-10 flex justify-between gap-10 justify-self-center pb-10 lg:pt-7">
+              <div>
+                <Image
+                  className="object-cover"
+                  src="/facebook.svg"
+                  alt="Facebook Logo"
+                  width="20"
+                  height="20"
+                />
+              </div>
+
+              <div>
+                <Image
+                  className="object-cover"
+                  src="/twitter.svg"
+                  alt="Twitter Logo"
+                  width="20"
+                  height="20"
+                />
+              </div>
+              <div>
+                <Image
+                  className="object-cover"
+                  src="/instagram.svg"
+                  alt="Instagram Logo"
+                  width="20"
+                  height="20"
+                />
+              </div>
             </div>
           </div>
         </footer>

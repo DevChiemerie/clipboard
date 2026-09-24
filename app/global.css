@@ -14,4 +14,8 @@
   --color-body: hsl(209 26% 98%);
 
   --color-footer: hsl(20 30% 97%);
+
+  --breakpoint-sm: 450px;
+  --breakpoint-md: 650px;
+  --breakpoint-lg: 850px;
 }
