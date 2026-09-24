@@ -3,22 +3,41 @@ import Button from "./_components/Button";
 import Header from "./_components/Header";
 import Logo from "./_components/Logo";
 import Paragarph, { ParagarphFooter } from "./_components/Paragarph";
-import bg from "@/public/bg-header-mobile.png";
+import bgMobile from "@/public/bg-header-mobile.png";
+import bgDesktop from "@/public/bg-header-desktop.png";
 
 export default function Page() {
   return (
     <>
-      <div className="h-0 w-full overflow-hidden">
+      <div className="relative h-40 w-full overflow-hidden md:hidden lg:hidden">
         <Image
           className="object-cover object-top"
-          src={bg}
+          src={bgMobile}
           alt="The Background Image"
           fill
           quality={75}
           placeholder="blur"
         />
+        <div
+          aria-hidden="true"
+          className="to-body pointer-events-none absolute inset-x-0 bottom-0 z-0 h-12 bg-linear-to-b from-transparent"
+        />
       </div>
-      <div className="mt-10 flex justify-self-center align-middle">
+      <div className="relative hidden h-60 w-full overflow-hidden md:block lg:block">
+        <Image
+          className="object-cover object-top"
+          src={bgDesktop}
+          alt="The Background Image"
+          fill
+          quality={75}
+          placeholder="blur"
+        />
+        <div
+          aria-hidden="true"
+          className="to-body pointer-events-none absolute inset-x-0 bottom-0 z-0 h-12 bg-linear-to-b from-transparent"
+        />
+      </div>
+      <div className="relative z-10 -mt-25 flex justify-self-center align-middle md:-mt-25 lg:-mt-25">
         <Logo />
       </div>
       <Header type="h1">A historty of everything you copy</Header>
@@ -58,9 +77,9 @@ export default function Page() {
 
       {/*The Desktop Image and text section(text with header and paragraph)  */}
       <div className="mb-32 gap-1 lg:mt-30 lg:flex">
-        <div className="mb-10 w-full min-w-0 justify-center">
+        <div className="mb-10 flex w-full min-w-0 justify-center">
           <Image
-            className="mx-10 h-auto w-full max-w-150 object-contain lg:-ml-7 lg:max-w-none"
+            className="mx-10 h-auto w-full max-w-100 object-contain lg:-ml-10 lg:max-w-none"
             src="/computer.png"
             alt="A Mac Desktop Computer"
             width="230"
